@@ -1,5 +1,5 @@
 {
-    "name": "orottier/laravel-migration-squasher",
+    "name": "stackout/laravel-migration-squasher",
     "description": "Aggregate your incremental Laravel migration files into single migration for each table. This eliminates all alter columns and makes testing via sqlite a possibility.",
     "keywords": ["framework", "laravel", "migrations", "migrate", "migration", "squash", "sqlite", "testing"],
     "license": "MIT",
