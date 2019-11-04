@@ -270,6 +270,7 @@ class MigrationSquasher
             case 'unsignedBigInteger' :
             case 'unsignedInteger' :
             case 'nullable':
+            case 'comment':
             case 'enum' :
                 $table->addColumn($this->createStandardColumn($matches, $segments, $line));
                 break;
