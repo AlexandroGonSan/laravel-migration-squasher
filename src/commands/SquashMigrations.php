@@ -35,7 +35,7 @@ class SquashMigrations extends Command
      *
      * @return void
      */
-    public function fire()
+    public function handle()
     {
         (new MigrationSquasher($this->option('path'), $this->option('output'), $this->option('move-to')))->squash();
     }
