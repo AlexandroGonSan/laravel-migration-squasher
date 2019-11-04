@@ -16,8 +16,8 @@
         "phpunit/phpunit": "^4.0"
     },
     "autoload": {
-        "psr-0": {
-            "Cytracom\\Squasher": "src/"
+        "psr-4": {
+            "Cytracom\\Squasher\\": "src/"
         },
         "classmap": [
             "src",
