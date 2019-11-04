@@ -269,6 +269,7 @@ class MigrationSquasher
             case 'tinyInteger' :
             case 'unsignedBigInteger' :
             case 'unsignedInteger' :
+            case 'nullable':
             case 'enum' :
                 $table->addColumn($this->createStandardColumn($matches, $segments, $line));
                 break;
