@@ -6,7 +6,7 @@
  * Time: 1:15 PM
  */
 
-namespace Cytracom\Squasher\tests;
+namespace Stackout\Squasher\tests;
 
 
 class RelationshipTest extends \PHPUnit_Framework_TestCase
@@ -16,7 +16,7 @@ class RelationshipTest extends \PHPUnit_Framework_TestCase
     {
         require __DIR__ .'/../database/Relationship.php';
 
-        $rel = new \Cytracom\Squasher\Database\Relationship('person_id', 'id', 'person');
+        $rel = new \Stackout\Squasher\Database\Relationship('person_id', 'id', 'person');
         $this->assertEquals('person_id', $rel->tableColumn);
         $this->assertEquals('id', $rel->relationshipColumn);
         $this->assertEquals('person', $rel->relationshipTable);

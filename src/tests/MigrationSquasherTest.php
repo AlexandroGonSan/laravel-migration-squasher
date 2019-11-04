@@ -6,10 +6,10 @@
  * Time: 3:24 PM
  */
 
-namespace Cytracom\Squasher\tests;
+namespace Stackout\Squasher\tests;
 
 
-use Cytracom\Squasher\MigrationSquasher;
+use Stackout\Squasher\MigrationSquasher;
 
 class MigrationSquasherTest extends \PHPUnit_Framework_TestCase
 {

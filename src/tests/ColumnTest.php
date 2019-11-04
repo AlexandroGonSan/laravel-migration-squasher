@@ -6,7 +6,7 @@
  * Time: 1:15 PM
  */
 
-namespace Cytracom\Squasher\tests;
+namespace Stackout\Squasher\tests;
 
 
 class ColumnTest extends \PHPUnit_Framework_TestCase
@@ -16,7 +16,7 @@ class ColumnTest extends \PHPUnit_Framework_TestCase
     {
         require __DIR__ .'/../database/Column.php';
 
-        $col = new \Cytracom\Squasher\Database\Column('string', 'test', true, 10, false, false);
+        $col = new \Stackout\Squasher\Database\Column('string', 'test', true, 10, false, false);
         $this->assertEquals('string', $col->type);
         $this->assertEquals('test', $col->name);
         $this->assertTrue($col->unsigned);

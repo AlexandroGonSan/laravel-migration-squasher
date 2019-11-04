@@ -1,7 +1,7 @@
 <?php
-namespace Cytracom\Squasher\Command;
+namespace Stackout\Squasher\Command;
 
-use Cytracom\Squasher\MigrationSquasher;
+use Stackout\Squasher\MigrationSquasher;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 

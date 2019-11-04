@@ -6,11 +6,11 @@
  * Time: 9:46 AM
  */
 
-namespace Cytracom\Squasher;
+namespace Stackout\Squasher;
 
-use Cytracom\Squasher\Database\Column;
-use Cytracom\Squasher\Database\Relationship;
-use Cytracom\Squasher\Database\Table;
+use Stackout\Squasher\Database\Column;
+use Stackout\Squasher\Database\Relationship;
+use Stackout\Squasher\Database\Table;
 
 class MigrationSquasher
 {
@@ -290,7 +290,7 @@ class MigrationSquasher
      * @param $matches
      * @param $segments
      * @param $line
-     * @return \Cytracom\Squasher\Database\Column
+     * @return \Stackout\Squasher\Database\Column
      */
     protected function createStandardColumn($matches, $segments, $line)
     {

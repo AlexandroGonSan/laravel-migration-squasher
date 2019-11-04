@@ -6,12 +6,12 @@
  * Time: 11:05 AM
  */
 
-namespace Cytracom\Squasher\Database;
+namespace Stackout\Squasher\Database;
 
 /**
  * A column class for use with the Cytracom Squasher pseudoschema.
  *
- * @package Cytracom\Squasher\Database
+ * @package Stackout\Squasher\Database
  */
 class Column
 {

@@ -6,12 +6,12 @@
  * Time: 2:31 PM
  */
 
-namespace Cytracom\Squasher\Database;
+namespace Stackout\Squasher\Database;
 
 /**
  * A relationship (foreign key) class for use with the Cytracom Squasher pseudoschema.
  *
- * @package Cytracom\Squasher\Database
+ * @package Stackout\Squasher\Database
  */
 class Relationship {
 

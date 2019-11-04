@@ -6,10 +6,10 @@
  * Time: 2:06 PM
  */
 
-namespace Cytracom\Squasher\tests;
+namespace Stackout\Squasher\tests;
 
 
-use Cytracom\Squasher\Database\Table;
+use Stackout\Squasher\Database\Table;
 
 class TableTest extends \PHPUnit_Framework_TestCase
 {
@@ -31,7 +31,7 @@ class TableTest extends \PHPUnit_Framework_TestCase
     {
         $tbl = new Table("test_table", 'MyISAM');
 
-        $tbl->addColumn($this->getMock('Cytracom\Squasher\Database\Column',[],['string','myColumn']));
+        $tbl->addColumn($this->getMock('Stackout\Squasher\Database\Column',[],['string','myColumn']));
         $cols = $tbl->getColumns();
 
         $this->assertEquals(1, count($cols));
@@ -41,7 +41,7 @@ class TableTest extends \PHPUnit_Framework_TestCase
     {
         $tbl = new Table("test_table", 'MyISAM');
 
-        $tbl->addColumn($this->getMock('Cytracom\Squasher\Database\Column',[],['string','myColumn']));
+        $tbl->addColumn($this->getMock('Stackout\Squasher\Database\Column',[],['string','myColumn']));
         $col = $tbl->getColumn("myColumn");
 
         $this->assertEquals('string', $col->type);
@@ -65,7 +65,7 @@ class TableTest extends \PHPUnit_Framework_TestCase
     {
         $tbl = new Table("test_table", 'MyISAM');
 
-        $tbl->addColumn($this->getMock('Cytracom\Squasher\Database\Column',[],['string','myColumn']));
+        $tbl->addColumn($this->getMock('Stackout\Squasher\Database\Column',[],['string','myColumn']));
 
         $cols = $tbl->getColumns();
         $this->assertEquals(1, count($cols));
@@ -80,7 +80,7 @@ class TableTest extends \PHPUnit_Framework_TestCase
     {
         $tbl = new Table("test_table", 'MyISAM');
 
-        $tbl->addColumn($this->getMock('Cytracom\Squasher\Database\Column',[],['string','myColumn']));
+        $tbl->addColumn($this->getMock('Stackout\Squasher\Database\Column',[],['string','myColumn']));
 
         $cols = $tbl->getColumns();
         $this->assertEquals(1, count($cols));
@@ -95,7 +95,7 @@ class TableTest extends \PHPUnit_Framework_TestCase
     {
         $tbl = new Table("test_table", 'MyISAM');
 
-        $tbl->addRelationship($this->getMock('Cytracom\Squasher\Database\Relationship',[],['col_id','id','other_table']));
+        $tbl->addRelationship($this->getMock('Stackout\Squasher\Database\Relationship',[],['col_id','id','other_table']));
 
         $rels = $tbl->getRelationships();
         $this->assertEquals(1, count($rels));
@@ -105,7 +105,7 @@ class TableTest extends \PHPUnit_Framework_TestCase
     {
         $tbl = new Table("test_table", 'MyISAM');
 
-        $tbl->addRelationship($this->getMock('Cytracom\Squasher\Database\Relationship',[],['col_id','id','other_table']));
+        $tbl->addRelationship($this->getMock('Stackout\Squasher\Database\Relationship',[],['col_id','id','other_table']));
 
         $rel = $tbl->getRelationship('test_table_col_id_foreign');
         $this->assertEquals('col_id', $rel->tableColumn);
@@ -131,7 +131,7 @@ class TableTest extends \PHPUnit_Framework_TestCase
     {
         $tbl = new Table("test_table", 'MyISAM');
 
-        $tbl->addRelationship($this->getMock('Cytracom\Squasher\Database\Relationship',[],['col_id','id','other_table']));
+        $tbl->addRelationship($this->getMock('Stackout\Squasher\Database\Relationship',[],['col_id','id','other_table']));
         $tbl->dropRelationship('test_table_col_id_foreign');
         $rels = $tbl->getRelationships();
         $this->assertEquals(0, count($rels));

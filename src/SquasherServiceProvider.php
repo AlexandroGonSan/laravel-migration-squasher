@@ -6,10 +6,10 @@
  * Time: 3:52 PM
  */
 
-namespace Cytracom\Squasher;
+namespace Stackout\Squasher;
 
 use Illuminate\Support\ServiceProvider;
-use Cytracom\Squasher\Command\SquashMigrations;
+use Stackout\Squasher\Command\SquashMigrations;
 
 class SquasherServiceProvider extends ServiceProvider{
 
@@ -37,7 +37,7 @@ class SquasherServiceProvider extends ServiceProvider{
     /**
      * Register generate:model
      *
-     * @return \Cytracom\Squasher\Command\SquashMigrations
+     * @return \Stackout\Squasher\Command\SquashMigrations
      */
     protected function registerMigrationSquasher()
     {

@@ -6,9 +6,9 @@
  * Time: 3:48 PM
  */
 
-namespace Cytracom\Squasher;
+namespace Stackout\Squasher;
 
-use Cytracom\Squasher\Database\Table;
+use Stackout\Squasher\Database\Table;
 
 class TableBuilder
 {
