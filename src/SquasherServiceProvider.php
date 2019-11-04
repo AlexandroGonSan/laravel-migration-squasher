@@ -41,7 +41,7 @@ class SquasherServiceProvider extends ServiceProvider{
      */
     protected function registerMigrationSquasher()
     {
-        $this->app['migrate:squash'] = $this->app->share(function($app)
+        $this->app->bind('migrate:squash', function($app)
         {
             return new SquashMigrations();
         });
